@@ -274,7 +274,7 @@ const projects = [
           },
       ],
       image: tripguide, // Replace with the appropriate image for the Chatbot
-      source_code_link: "https://github.com/DANNE-SANDEEP/On-demand-Chat-Bot.git", // Replace with your actual GitHub link
+      source_code_link: "https://github.com/DANNE-SANDEEP/Ondemand-chatbot.git", // Replace with your actual GitHub link
   },
 ];
 
