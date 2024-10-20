@@ -7,10 +7,6 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-// t90OwaGQhozSDuxs2
-// template_bxvehm9
-// service_55ob06s
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -33,6 +29,13 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Validation check to ensure that none of the fields are empty
+    if (!form.name || !form.email || !form.message) {
+      alert("Please fill out all fields before submitting.");
+      return; // Do not proceed if any field is empty
+    }
+
     setLoading(true);
 
     emailjs
